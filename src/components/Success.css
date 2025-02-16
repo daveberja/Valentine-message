@@ -1,28 +1,49 @@
-.poem-paper {
+/* Make sure the entire success container takes full width & height */
+.App-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffd9e6; /* Light pink background */
+    position: relative;
+  }
+  
+  /* Fix the Poem Box */
+  .poem-paper {
     width: 90%;
-    max-width: 450px; /* Ensures it doesn’t get too wide */
-    margin: 0 auto; /* Centers it */
-    background: #fdf3f4; /* Light pink background */
+    max-width: 500px;
+    margin: auto; /* Centers the box */
     padding: 20px;
-    text-align: center;
+    background: #fdf3f4;
     border-radius: 15px;
+    text-align: center;
     position: relative;
     z-index: 2;
-    word-wrap: break-word; /* Ensure text doesn’t overflow */
   }
   
-  .poem-paper p {
-    font-size: 16px;
-    line-height: 1.5; /* Space between lines */
-    word-break: break-word;
-    text-align: center; /* Make sure it's centered */
+  /* Ensure the hearts do not cover the poem */
+  .heart-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
   }
   
+  /* Responsive Fix */
   @media (max-width: 768px) {
     .poem-paper {
+      max-width: 90%;
       font-size: 14px;
-      width: 95%; /* Ensures it takes most of the mobile screen */
       padding: 15px;
+    }
+  
+    .App-success {
+      padding: 20px;
     }
   }
   
