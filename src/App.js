@@ -2,37 +2,30 @@ import React, { useState } from "react";
 import "./App.css";
 import Success from "./components/Success";
 import Asking from "./components/Asking";
+import BackgroundMusic from "./components/BackgroundMusic"; // Import Background Music
 import flowerBear from "./flowerBear.gif";
 import madBear from "./madBear.gif";
 
-/**
- * Main App component managing the Valentine's Day proposal.
- *
- * @returns {JSX.Element} JSX element representing the App component.
- */
 const App = () => {
-  // State to track acceptance and rejection
   const [accepted, setAccepted] = useState(false);
   const [rejected, setRejected] = useState(false);
   const [noButtonText, setNoButtonText] = useState("No");
   const [lastRejectedIndex, setLastRejectedIndex] = useState(-1);
 
-  // Handler for accepting the proposal
   const handleAccept = () => {
     setAccepted(true);
   };
 
-  // Handler for rejecting the proposal
   const handleReject = () => {
     setRejected(true);
-    // Array of rejection messages
     const rejectionTexts = [
       "Are you sure?",
       "Maybe try again?",
       "Think again!",
-      "Loser :(",
+      "Pakipot kapa eh",
+      "Bawal po mag no talaga",
+      "PLS SAY YES!!!",
     ];
-    // Randomly select a rejection message
     let randomIndex;
     do {
       randomIndex = Math.floor(Math.random() * rejectionTexts.length);
@@ -44,8 +37,11 @@ const App = () => {
 
   return (
     <div className="App">
+      {/* Background Music Component */}
+      <BackgroundMusic />
+      
+
       <div className="App-body">
-        {/* Asking to be my Valentine */}
         {!accepted && (
           <Asking
             gif={rejected ? madBear : flowerBear}
@@ -56,7 +52,6 @@ const App = () => {
           />
         )}
 
-        {/* She said YES! */}
         {accepted && <Success />}
       </div>
     </div>

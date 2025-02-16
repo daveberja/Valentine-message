@@ -96,3 +96,38 @@
 .App-success {
   padding: 20px;
 }
+
+.App-text-success {
+  font-family: 'Open Sans', sans-serif; /* Apply Open Sans */
+  font-size: 19px;
+  line-height: 1.6; /* Improve readability */
+  text-align: center;
+  color: #4a4a4a; /* Darker color for contrast */
+  font-weight: 600; /* Slight bold for elegant emphasis */
+}
+
+@media screen and (max-width: 768px) {
+  .poem-paper {
+    width: 90%; /* Adjusts poem width for smaller screens */
+    padding: 15px;
+  }
+
+  .App-text-success {
+    font-size: 16px; /* Smaller font for better mobile fit */
+  }
+
+  .frame {
+    width: 120px; /* Slightly smaller frames */
+    height: 120px;
+  }
+
+  .App-gif {
+    width: 250px; /* Reduce gif size for mobile */
+    height: auto;
+  }
+
+  .tape {
+    animation-duration: 15s; /* Slow down animation for better viewing */
+  }
+}
+

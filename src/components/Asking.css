@@ -1,0 +1,67 @@
+.poem-paper {
+    background-color: #f9f3e6; /* Soft paper color */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: "Satisfy", cursive;
+    text-align: center;
+    color: #3e2723; /* Deep brown text like ink */
+    line-height: 1.6;
+  }
+  
+  .heart-rain {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  
+  .falling-heart {
+    position: absolute;
+    color: red;
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    from {
+      transform: translateY(-10vh);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+
+  .poem-paper {
+    background: #f8f1e4; /* Soft paper-like color */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    font-family: "EB Garamond", serif; /* Classic, readable, and poetic */
+    font-size: 20px;
+    font-weight: 400;
+    color: #5a3e36; /* Elegant dark brown */
+    line-height: 1.8;
+    border: 2px solid #d4b996; /* Subtle border */
+  }
+  
+  .poem-paper p {
+    margin-bottom: 10px;
+  }
+  
+  .poem-paper strong {
+    font-weight: 600;
+    color: #7a4e36;
+  }
+  
+  
