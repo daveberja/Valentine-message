@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Valentine-message/static/css/main.74dc504a.css",
+    "main.css": "/Valentine-message/static/css/main.d1d4f6f6.css",
     "main.js": "/Valentine-message/static/js/main.4e860404.js",
     "static/js/592.0db8293a.chunk.js": "/Valentine-message/static/js/592.0db8293a.chunk.js",
     "static/media/kisses.gif": "/Valentine-message/static/media/kisses.c73834e2839a40947299.gif",
@@ -17,12 +17,12 @@
     "static/media/06.jpg": "/Valentine-message/static/media/06.273b459bc01053e1b8a9.jpg",
     "static/media/07.jpg": "/Valentine-message/static/media/07.97b0fb8c53f278adea85.jpg",
     "index.html": "/Valentine-message/index.html",
-    "main.74dc504a.css.map": "/Valentine-message/static/css/main.74dc504a.css.map",
+    "main.d1d4f6f6.css.map": "/Valentine-message/static/css/main.d1d4f6f6.css.map",
     "main.4e860404.js.map": "/Valentine-message/static/js/main.4e860404.js.map",
     "592.0db8293a.chunk.js.map": "/Valentine-message/static/js/592.0db8293a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74dc504a.css",
+    "static/css/main.d1d4f6f6.css",
     "static/js/main.4e860404.js"
   ]
 }
