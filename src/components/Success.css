@@ -1,29 +1,38 @@
-/* Make sure the entire success container takes full width & height */
+/* Ensure the success container doesn't take the full page */
 .App-success {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    justify-content: flex-start; /* Push content up, so images can be seen */
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
     background-color: #ffd9e6; /* Light pink background */
+    padding-top: 20px; /* Adds space at the top */
     position: relative;
   }
   
-  /* Fix the Poem Box */
+  /* Reduce the size of the poem box */
   .poem-paper {
-    width: 90%;
-    max-width: 500px;
-    margin: auto; /* Centers the box */
-    padding: 20px;
+    width: 80%; /* Smaller width */
+    max-width: 400px; /* Prevents it from being too big */
+    padding: 15px;
     background: #fdf3f4;
     border-radius: 15px;
     text-align: center;
     position: relative;
     z-index: 2;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Ensure the hearts do not cover the poem */
+  /* Ensure the images above remain visible */
+  .App-gif {
+    width: 150px; /* Reduce size */
+    height: auto;
+    margin-bottom: 10px; /* Add spacing below the image */
+  }
+  
+  /* Ensure the heart animation does not block the text */
   .heart-rain {
     position: fixed;
     top: 0;
@@ -37,13 +46,17 @@
   /* Responsive Fix */
   @media (max-width: 768px) {
     .poem-paper {
-      max-width: 90%;
-      font-size: 14px;
-      padding: 15px;
+      max-width: 80%;
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .App-gif {
+      width: 120px;
     }
   
     .App-success {
-      padding: 20px;
+      padding-top: 50px;
     }
   }
   
