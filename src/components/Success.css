@@ -1,0 +1,28 @@
+.poem-paper {
+    width: 90%;
+    max-width: 450px; /* Ensures it doesn’t get too wide */
+    margin: 0 auto; /* Centers it */
+    background: #fdf3f4; /* Light pink background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+    word-wrap: break-word; /* Ensure text doesn’t overflow */
+  }
+  
+  .poem-paper p {
+    font-size: 16px;
+    line-height: 1.5; /* Space between lines */
+    word-break: break-word;
+    text-align: center; /* Make sure it's centered */
+  }
+  
+  @media (max-width: 768px) {
+    .poem-paper {
+      font-size: 14px;
+      width: 95%; /* Ensures it takes most of the mobile screen */
+      padding: 15px;
+    }
+  }
+  

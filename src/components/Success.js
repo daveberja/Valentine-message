@@ -3,6 +3,7 @@ import kisses from "../kisses.gif";
 import "./Asking.css";
 import "./TapeAnimation.css";
 import "./bg.css";
+import "./Success.css";
 
 // Import images dynamically
 const images = [
